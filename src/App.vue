@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <keep-alive>
+        <router-view>
+            <!-- 这里是会被缓存的视图组件，比如 Home！ -->
+        </router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -27,5 +27,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.loading{
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 </style>
