@@ -44,6 +44,10 @@ export default {
         forList() {
             if (this.$route.params.data) {
                 this.params = this.$route.params.data.result
+            } else {
+                this.$router.push({
+                    name: 'home',
+                })
             }
 
         },

@@ -6,6 +6,7 @@ import Detail from './views/Detail.vue';
 
 Vue.use(Router);
 
+
 export default new Router({
   routes: [
     {
