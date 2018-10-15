@@ -1,5 +1,5 @@
 import axios from 'axios'
-let root = '/apis'
+let root = 'apis'
 import {
   Dialog
 } from 'vant'
